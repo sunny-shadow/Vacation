@@ -4,24 +4,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vacation Search</title>
+    <title>Vacation Planning</title>
+    <link rel="icon" type="image/x-icon" href="images/Everaldo-Kids-Icons-Icon-themes.128.png">
 </head>
 
 <body>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="search.html">Search Vacations</a></li>
-                    <li><a href="plan.html">Plan My Vacation</a></li>
-                </ul>
-            </nav>
-            <h1>...</h1>
-            <p>...</p>
-        </header>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="search.html">Search</a></li>
+                <li><a href="plan.html">Plan</a></li>
+            </ul>
+        </nav>
+        <h1>Build your perfect trip itinerary</h1>
+        <p>Create a step-by-step layout for your dream vacation!</p>
+    </header>
+
+    <main>
+        <section id="planner-form">
+            <h2>Trip Details</h2>
+            <form action="#" method="post">
+                <fieldset>
+
+                    <legend>Basic Trip Info</legend>
+
+                    <label for="trip-name">Trip name</label>
+                    <br>
+                    <input type="text" id="trip-name" name="trip-name" placeholder="Alex & Maddies Getaway">
+                    <br><br>
+
+                    <label for="plan-destination">Main Destination</label>
+                    <br>
+                    <input type="text" id="plan-destination" name="plan-destination" placeholder="Turkey">
+                    <br><br>
+
+                    <label for="plan-start-date">Departure Date:</label>
+                    <br>
+                    <input type="date" id="plan-start-date" name="plan-start-date">
+                    <br><br>
+
+                    <label for="plan-end-date">Departure Date:</label>
+                    <br>
+                    <input type="date" id="plan-end-date" name="plan-end-date">
+                    <br><br>
+
+                    <label for="plan-num-traveler">Planned number of travelers:</label>
+                    <br>
+                    <input type="number" id="plan-num-traveler" name="plan-num-traveler" min="1" value="1">
+                    <br><br>
+
+                    <label for="notes">Extra notes:</label>
+                    <textarea id="notes" name="notes" rows="5" placeholder="Type here"></textarea>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Accommodations</legend>
+
+                    <p>Type of housing</p>
+
+                   <label for="acc-hotel">Hotel</label>
+                    <input type="checkbox" id="acc-hotel" name="accommodation" value="hotel">
+                    <br>
+
+                    <label for="acc-rental">Rental</label>
+                    <input type="checkbox" id="acc-rental" name="accommodation" value="rental">
+                    <br>
+
+                    <label for="acc-hostel">Hostel</label>
+                    <input type="checkbox" id="acc-hostel" name="accommodation" value="hostel">
+                    <br>
+
+                    <label for="acc-camping">Camping</label>
+                    <input type="checkbox" id="acc-camping" name="accommodation" value="camping">
+                    <br><br>
+
+                    <label for="room-preferance">Room Type:</label>
+                    <input type="text" id="room-preferance" name="room-preferance" placeholder="Ex. King bed, two rooms">
+                    <br><br>
+
+                </fieldset>
+
+                <fieldset>
+
+                    <legend>Activites</legend>
+
+                    <label for="act-beach">Beach</label>
+                    <input type="checkbox" id="act-beach" name="activity" value="beach">
+                    <br>
+
+                    <label for="act-history">History</label>
+                    <input type="checkbox" id="act-history" name="activity" value="history">
+                    <br>
+
+                    <label for="act-nature">Nature</label>
+                    <input type="checkbox" id="act-nature" name="activity" value="nature">
+                    <br>
+
+                    <label for="act-shopping">Shopping</label>
+                    <input type="checkbox" id="act-shopping" name="activity" value="shopping">
+                    <br>
+
+                    <label for="act-sightseeing">Sightseeing</label>
+                    <input type="checkbox" id="act-sightseeing" name="activity" value="sightseeing">
+                    <br>
+
+                    <label for="act-adventure">Adventure</label>
+                    <input type="checkbox" id="act-adventure" name="activity" value="adventure">
+                    <br><br>
+
+                </fieldset>
+
+                <input type="submit" value="Save Plan">
+
+            </form>
+        </section>
+        
+        <section id="itinerary-display">
+            <h2>Current Itinerary</h2>
+            <h3>Day 1: Arrival in [Destination]</h3>
+            <ul>
+                <li>Morning: Arrive at [Airport/Station]</li>
+                <li>Afternoon: Check into [Accommodation]</li>
+                <li>Evening: Dinner at [Restaurant]</li>
+            </ul>
+
+            <h3>Day 2: Exploring [City/Area]</h3>
+            <ul>
+                <li>Morning: Visit [Attraction 1]</li>
+                <li>Afternoon: Lunch at [Place] & Visit [Attraction 2]</li>
+                <li>Evening: [Activity/Show]</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Vacation Planner. All rights reserved.</p>
+    </footer>
 
 </body>
-
 </html>
